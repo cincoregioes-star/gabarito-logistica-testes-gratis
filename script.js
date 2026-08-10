@@ -29,9 +29,12 @@ function premiumClick(track){
   const checkout=cfg.checkouts[track];
   const t=tracks.find(x=>x.id===track);
   if(window.GLOG_META) GLOG_META.custom('PremiumIntent',{content_id:track,content_name:t?t.title:track,value:cfg.premiumValue||19.90,currency:'BRL'});
-  if(!checkout){ alert('Checkout desta trilha ainda está em configuração. O site só deve ser publicado após inserir os 12 links da Kiwify em config.js.'); return; }
-  const url=window.GLOG_META?GLOG_META.withCampaign(checkout,{src:'glog_'+track}):checkout;
-  window.open(url,'_blank','noopener');
+  if(checkout){
+    const url=window.GLOG_META?GLOG_META.withCampaign(checkout,{src:'glog_'+track}):checkout;
+    window.open(url,'_blank','noopener');
+    return;
+  }
+  location.href='premium-info.html?trilha='+encodeURIComponent(track);
 }
 document.querySelectorAll('.premium-link').forEach(b=>b.addEventListener('click',()=>premiumClick(b.dataset.track)));
 
