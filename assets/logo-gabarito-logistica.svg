@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="180" viewBox="0 0 560 180">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071827"/><stop offset="1" stop-color="#06111d"/></linearGradient>
+  <linearGradient id="n1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#24d8ff"/><stop offset="1" stop-color="#89f3ff"/></linearGradient>
+  <linearGradient id="n2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b3f918"/><stop offset="1" stop-color="#8ce90a"/></linearGradient>
+</defs>
+<rect x="2" y="2" width="556" height="176" rx="28" fill="url(#bg)" stroke="#00b8ff" stroke-opacity=".55"/>
+<clipPath id="r"><rect x="18" y="18" width="188" height="144" rx="22"/></clipPath>
+<g clip-path="url(#r)">
+<rect x="18" y="18" width="188" height="144" fill="#061523"/>
+<path d="M18 18h188v144H18z" fill="url(#bg)"/>
+<g opacity=".95">
+  <path d="M112 18 18 162h28l73-111 72 111h15L112 18z" fill="#041018"/>
+  <path d="M112 18 206 162h-28L105 51 33 162H18z" fill="#071f34" opacity=".55"/>
+  <path d="M34 18h19v144H34zm33 0h14v144H67zm26 0h8v144h-8zm63 0h8v144h-8zm22 0h14v144h-14z" fill="#0f3755"/>
+  <path d="M112 26 52 162h14l48-106 48 106h14L112 26z" fill="#0d436a" opacity=".45"/>
+  <path d="M111 24v136" stroke="#4be4ff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M112 152h32" stroke="#2de2ff" stroke-width="4" opacity=".9"/>
+  <path d="M80 18h5v144h-5zm59 0h5v144h-5z" fill="#1bf0ff" opacity=".65"/>
+  <g stroke="#18cfff" stroke-width="3" opacity=".8">
+    <path d="M52 36h20M46 58h26M39 80h33M33 102h39M27 124h45"/>
+    <path d="M152 36h20M146 58h26M139 80h33M133 102h39M127 124h45"/>
+  </g>
+</g></g>
+<text x="228" y="92" font-size="54" font-family="Arial, Helvetica, sans-serif" font-weight="900" fill="#f7fbff">GABARITO</text>
+<text x="228" y="136" font-size="54" font-family="Arial, Helvetica, sans-serif" font-weight="900" fill="url(#n2)">LOGÍSTICA</text>
+</svg>

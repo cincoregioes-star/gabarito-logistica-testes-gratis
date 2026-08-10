@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#102f50"/></linearGradient>
+ <linearGradient id="y" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff400"/><stop offset="1" stop-color="#ffb400"/></linearGradient>
+ <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2f7df6"/><stop offset="1" stop-color="#4dd7ff"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="1320" cy="150" r="260" fill="#ffe600" opacity=".08"/>
+<circle cx="220" cy="760" r="320" fill="#2f7df6" opacity=".12"/>
+<g opacity=".14" stroke="#4dd7ff">
+  <path d="M0 140h1600M0 280h1600M0 420h1600M0 560h1600M0 700h1600"/>
+  <path d="M160 0v900M320 0v900M480 0v900M640 0v900M800 0v900M960 0v900M1120 0v900M1280 0v900M1440 0v900"/>
+</g>
+<!-- warehouse -->
+<g transform="translate(160 170)">
+ <path d="M0 190 310 25l310 165v390H0z" fill="#0d2036" stroke="#5d7795" stroke-width="6"/>
+ <path d="M0 190 310 25l310 165" fill="none" stroke="url(#y)" stroke-width="12"/>
+ <rect x="80" y="270" width="150" height="220" rx="10" fill="#122d4b" stroke="#4dd7ff" stroke-width="5"/>
+ <rect x="390" y="270" width="150" height="220" rx="10" fill="#122d4b" stroke="#4dd7ff" stroke-width="5"/>
+ <g fill="url(#y)">
+   <rect x="105" y="305" width="100" height="58" rx="5"/>
+   <rect x="105" y="380" width="100" height="58" rx="5"/>
+   <rect x="415" y="305" width="100" height="58" rx="5"/>
+   <rect x="415" y="380" width="100" height="58" rx="5"/>
+ </g>
+</g>
+<!-- conveyor -->
+<g transform="translate(560 565)">
+ <rect x="0" y="70" width="700" height="70" rx="26" fill="#142b49" stroke="#4dd7ff" stroke-width="5"/>
+ <g fill="#0a1626" stroke="#4dd7ff" stroke-width="4">
+  <circle cx="70" cy="105" r="34"/><circle cx="210" cy="105" r="34"/><circle cx="350" cy="105" r="34"/><circle cx="490" cy="105" r="34"/><circle cx="630" cy="105" r="34"/>
+ </g>
+ <g fill="url(#y)" stroke="#7a5a00" stroke-width="4">
+  <rect x="85" y="0" width="120" height="90" rx="7"/>
+  <rect x="300" y="-28" width="145" height="118" rx="7"/>
+  <rect x="545" y="5" width="110" height="85" rx="7"/>
+ </g>
+ <g stroke="#07111f" stroke-width="8">
+  <path d="M115 45h60"/><path d="M333 22h78"/><path d="M570 45h60"/>
+ </g>
+</g>
+<!-- scanner -->
+<g transform="translate(1090 210)" filter="url(#glow)">
+ <rect x="0" y="0" width="320" height="210" rx="30" fill="#0c1e34" stroke="url(#b)" stroke-width="6"/>
+ <path d="M50 70h220M50 105h220M50 140h220" stroke="#f8fbff" stroke-width="9" stroke-dasharray="7 11"/>
+ <path d="M38 42v-18h26M282 42v-18h-26M38 168v18h26M282 168v18h-26" fill="none" stroke="#ffe600" stroke-width="8"/>
+</g>
+<!-- truck -->
+<g transform="translate(1000 520)">
+ <rect x="0" y="0" width="280" height="125" rx="18" fill="#f8fbff"/>
+ <path d="M280 38h95l55 54v33H280z" fill="url(#b)"/>
+ <rect x="303" y="55" width="55" height="40" rx="6" fill="#07111f"/>
+ <circle cx="85" cy="135" r="36" fill="#07111f" stroke="#ffe600" stroke-width="8"/>
+ <circle cx="342" cy="135" r="36" fill="#07111f" stroke="#ffe600" stroke-width="8"/>
+ <path d="M65 34h150M65 65h95" stroke="#07111f" stroke-width="13" stroke-linecap="round"/>
+</g>
+<text x="800" y="825" text-anchor="middle" font-family="Arial,sans-serif" font-size="42" font-weight="900" fill="#f8fbff" opacity=".85">CENTRO DE DISTRIBUIÇÃO • E-COMMERCE • LOGÍSTICA</text>
+</svg>

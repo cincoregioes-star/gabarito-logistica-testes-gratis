@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="320" viewBox="0 0 520 320">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2237"/><stop offset="1" stop-color="#0f2c47"/></linearGradient>
+ <linearGradient id="lime" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b3f918"/><stop offset="1" stop-color="#82e70f"/></linearGradient>
+</defs>
+<rect x="2" y="2" width="516" height="316" rx="28" fill="url(#bg)" stroke="#1e6d93"/>
+<circle cx="42" cy="42" r="8" fill="#a6ef1c"/>
+<text x="70" y="49" font-family="Arial" font-size="20" font-weight="700" fill="#7ea0b3">CATÁLOGO 2026</text>
+<text x="452" y="49" font-family="Arial" font-size="20" font-weight="700" fill="#7ea0b3">V1.0</text>
+<rect x="30" y="74" width="460" height="132" rx="20" fill="#061523" stroke="#1e6d93"/>
+<image href="logo-gabarito-logistica.svg" x="56" y="95" width="334" height="84"/>
+<text x="54" y="224" font-family="Arial" font-size="25" font-weight="700" fill="#f7fbff">Logística • CD • seleção digital</text>
+<line x1="100" y1="242" x2="100" y2="300" stroke="#204866"/>
+<line x1="268" y1="242" x2="268" y2="300" stroke="#204866"/>
+<text x="72" y="272" text-anchor="middle" font-family="Arial" font-size="36" font-weight="900" fill="#f7fbff">12</text>
+<text x="72" y="296" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#7ea0b3">TRILHAS</text>
+<text x="184" y="272" text-anchor="middle" font-family="Arial" font-size="36" font-weight="900" fill="#f7fbff">2 x 5</text>
+<text x="184" y="296" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#7ea0b3">GRÁTIS POR</text>
+<text x="184" y="314" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#7ea0b3">TRILHA</text>
+<text x="390" y="272" text-anchor="middle" font-family="Arial" font-size="36" font-weight="900" fill="#f7fbff">R$ 19,90</text>
+<text x="390" y="296" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#7ea0b3">A R$ 49,90</text>
+</svg>
