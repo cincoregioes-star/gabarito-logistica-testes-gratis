@@ -132,7 +132,7 @@ window.GLOG_TRACKS = [
       "Ocorrências",
       "Consolidação"
     ],
-    "freeFile": "teste.html?trilha=trp"
+    "freeFile": "https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/?trilha=trp"
   },
   {
     "id": "mov",
@@ -147,7 +147,7 @@ window.GLOG_TRACKS = [
       "Circulação",
       "Consolidação"
     ],
-    "freeFile": "teste.html?trilha=mov"
+    "freeFile": "https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/?trilha=mov"
   },
   {
     "id": "adm",
