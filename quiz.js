@@ -15,10 +15,3 @@ el('nextQuestion').addEventListener('click',()=>{if(index<session.length-1){inde
 function finish(){const c=answers.filter(a=>a.correct).length,p=Math.round(c/session.length*100);if(window.GLOG_META)GLOG_META.custom('FreeTestComplete',{content_id:track.id,content_name:track.title,module:currentModule+1,score:p,correct_answers:c,total_questions:session.length});const key=`glog-free-${track.id}-${currentModule}`,old=Number(localStorage.getItem(key)||0);localStorage.setItem(key,String(Math.max(old,p)));el('scorePct').textContent=p+'%';el('resultTitle').textContent=p>=80?'Ótimo desempenho':p>=60?'Bom começo':'Continue treinando';el('resultText').textContent=`Você acertou ${c} de ${session.length}. Melhor resultado deste módulo: ${Math.max(old,p)}%.`;el('review').innerHTML='';answers.forEach((a,i)=>{const d=document.createElement('div');d.className='review-item';d.innerHTML=`<b>${i+1}. ${a.correct?'✓':'✕'}</b><div></div><small></small>`;d.children[1].textContent=a.q.q;d.children[2].textContent=a.q.e;el('review').appendChild(d)});show('result')}
 el('retryBtn').addEventListener('click',()=>start(currentModule));
 el('backBtn').addEventListener('click',()=>{location.href='index.html#trilhas'});
-el('premiumBtn').addEventListener('click',()=>{
-  const checkout=window.GLOG_CONFIG.checkouts[track.id];
-  if(window.GLOG_META)GLOG_META.custom('PremiumIntent',{content_id:track.id,content_name:track.title,value:window.GLOG_CONFIG.premiumValue||19.90,currency:'BRL'});
-  if(!checkout){location.href='premium-info.html?trilha='+encodeURIComponent(track.id);return;}
-  const url=window.GLOG_META?GLOG_META.withCampaign(checkout,{src:'glog_'+track.id}):checkout;
-  window.open(url,'_blank','noopener');
-});
