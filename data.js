@@ -72,7 +72,7 @@ window.GLOG_TRACKS = [
       "Qualidade de packing",
       "Consolidação"
     ],
-    "freeFile": "teste.html?trilha=pak"
+    "freeFile": "https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/?trilha=pak"
   },
   {
     "id": "srt",
@@ -87,7 +87,7 @@ window.GLOG_TRACKS = [
       "Expedição",
       "Consolidação"
     ],
-    "freeFile": "teste.html?trilha=srt"
+    "freeFile": "https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/?trilha=srt"
   },
   {
     "id": "inv",
