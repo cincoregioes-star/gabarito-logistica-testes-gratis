@@ -27,7 +27,7 @@ window.GLOG_TRACKS = [
       "Avarias e registros",
       "Consolidação"
     ],
-    "freeFile": "teste.html?trilha=rec"
+    "freeFile": "https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/?trilha=rec"
   },
   {
     "id": "est",
@@ -42,7 +42,7 @@ window.GLOG_TRACKS = [
       "Acuracidade",
       "Consolidação"
     ],
-    "freeFile": "teste.html?trilha=est"
+    "freeFile": "https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/?trilha=est"
   },
   {
     "id": "pck",
