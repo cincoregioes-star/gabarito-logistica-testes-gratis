@@ -12,7 +12,7 @@ window.GLOG_TRACKS = [
       "Prevenção de falhas",
       "Consolidação"
     ],
-    "freeFile": "teste.html?trilha=ops"
+    "freeFile": "https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/?trilha=ops"
   },
   {
     "id": "rec",
@@ -57,7 +57,7 @@ window.GLOG_TRACKS = [
       "Produtividade",
       "Consolidação"
     ],
-    "freeFile": "teste.html?trilha=pck"
+    "freeFile": "https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/?trilha=pck"
   },
   {
     "id": "pak",
