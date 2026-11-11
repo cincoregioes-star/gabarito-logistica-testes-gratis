@@ -21,7 +21,8 @@ tracks.forEach(t=>{
   const a=document.createElement('article');
   a.className='card';
   a.style.setProperty('--accent',m.accent);
-  a.innerHTML=`<div class="card-top"><span class="code-pill">${escapeHtml(t.code)}</span><span class="card-cat">${escapeHtml(m.cat)}</span></div><span class="card-level">${escapeHtml(m.level)}</span><h3><strong>${escapeHtml(t.title)}</strong></h3><p>${escapeHtml(t.short)}</p><div class="free-box"><span class="free-tag">GRÁTIS</span><div class="free-meta">2 módulos • 10 questões</div><small>Fundamentos da função + situações práticas</small></div><div class="card-actions"><a class="btn btn-yellow" href="${t.freeFile}">Iniciar teste gratuito <span aria-hidden="true">→</span></a></div>`;
+  const completo=(t.id==='est'||t.id==='rec');
+  a.innerHTML=`<div class="card-top"><span class="code-pill">${escapeHtml(t.code)}</span><span class="card-cat">${escapeHtml(m.cat)}</span></div><span class="card-level">${escapeHtml(m.level)}</span><h3><strong>${escapeHtml(t.title)}</strong></h3><p>${escapeHtml(t.short)}</p><div class="free-box"><span class="free-tag">GRÁTIS</span><div class="free-meta">${completo?"5 módulos • 100 questões":"2 módulos • 10 questões"}</div><small>${completo?"Banco completo no Instituto EnsinoMeu":"Questões atuais em dois módulos"}</small></div><div class="card-actions"><a class="btn btn-yellow" href="${t.freeFile}">Iniciar teste gratuito <span aria-hidden="true">→</span></a></div>`;
   grid.appendChild(a)
 });
 
