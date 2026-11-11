@@ -21,22 +21,9 @@ tracks.forEach(t=>{
   const a=document.createElement('article');
   a.className='card';
   a.style.setProperty('--accent',m.accent);
-  a.innerHTML=`<div class="card-top"><span class="code-pill">${escapeHtml(t.code)}</span><span class="card-cat">${escapeHtml(m.cat)}</span></div><span class="card-level">${escapeHtml(m.level)}</span><h3><strong>${escapeHtml(t.title)}</strong></h3><p>${escapeHtml(t.short)}</p><div class="free-box"><span class="free-tag">GRÁTIS</span><div class="free-meta">2 módulos • 10 questões</div><small>Fundamentos da função + situações práticas</small></div><div class="card-actions"><a class="btn btn-yellow" href="${t.freeFile}">Iniciar teste grátis <span aria-hidden="true">→</span></a></div><div class="premium-trigger"><span>Ver estrutura premium</span><button class="premium-link" data-track="${t.id}" aria-label="Abrir premium da trilha ${escapeHtml(t.title)}">+</button></div>`;
+  a.innerHTML=`<div class="card-top"><span class="code-pill">${escapeHtml(t.code)}</span><span class="card-cat">${escapeHtml(m.cat)}</span></div><span class="card-level">${escapeHtml(m.level)}</span><h3><strong>${escapeHtml(t.title)}</strong></h3><p>${escapeHtml(t.short)}</p><div class="free-box"><span class="free-tag">GRÁTIS</span><div class="free-meta">2 módulos • 10 questões</div><small>Fundamentos da função + situações práticas</small></div><div class="card-actions"><a class="btn btn-yellow" href="${t.freeFile}">Iniciar teste gratuito <span aria-hidden="true">→</span></a></div>`;
   grid.appendChild(a)
 });
-
-function premiumClick(track){
-  const checkout=cfg.checkouts[track];
-  const t=tracks.find(x=>x.id===track);
-  if(window.GLOG_META) GLOG_META.custom('PremiumIntent',{content_id:track,content_name:t?t.title:track,value:cfg.premiumValue||19.90,currency:'BRL'});
-  if(checkout){
-    const url=window.GLOG_META?GLOG_META.withCampaign(checkout,{src:'glog_'+track}):checkout;
-    window.open(url,'_blank','noopener');
-    return;
-  }
-  location.href='premium-info.html?trilha='+encodeURIComponent(track);
-}
-document.querySelectorAll('.premium-link').forEach(b=>b.addEventListener('click',()=>premiumClick(b.dataset.track)));
 
 // Cards de parceiros: o card inteiro abre o site; o áudio para antes de sair.
 (function initPartnerCards(){
