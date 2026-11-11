@@ -102,7 +102,7 @@ window.GLOG_TRACKS = [
       "Qualidade",
       "Consolidação"
     ],
-    "freeFile": "teste.html?trilha=inv"
+    "freeFile": "https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/?trilha=inv"
   },
   {
     "id": "seg",
@@ -117,7 +117,7 @@ window.GLOG_TRACKS = [
       "Riscos e prevenção",
       "Consolidação"
     ],
-    "freeFile": "teste.html?trilha=seg"
+    "freeFile": "https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/?trilha=seg"
   },
   {
     "id": "trp",
