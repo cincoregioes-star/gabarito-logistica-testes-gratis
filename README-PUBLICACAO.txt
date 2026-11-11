@@ -1,16 +1,14 @@
-GABARITO LOGÍSTICA 2026 — SITE PÚBLICO CORRIGIDO
+GABARITO LOGÍSTICA — ACESSO 100% GRATUITO
 
-CORREÇÕES DESTA VERSÃO
-- Os 12 botões de teste grátis agora apontam para teste.html?trilha=ID; não dependem de arquivos ausentes.
-- O 404 não redireciona silenciosamente para a home.
-- O Premium abre uma página pública de apresentação mesmo antes do checkout Kiwify existir.
-- Quando o checkout é inserido em config.js, o botão abre a Kiwify automaticamente.
-- O conteúdo Premium pago continua fora do GitHub público.
-- A música de fundo NÃO começa com o primeiro clique. Só toca se o usuário clicar explicitamente em “▶ Música”.
-- Sons de acerto/erro continuam funcionando durante o quiz.
+- As 12 trilhas estão liberadas gratuitamente, sem checkout nem assinaturas.
+- Estoque e Recebimento possuem 100 questões cada no Instituto EnsinoMeu, divididas em 5 módulos de 20.
+- As outras dez trilhas possuem 10 questões cada enquanto seus bancos são ampliados.
+- O conteúdo histórico não foi apagado: os arquivos de teste permanecem funcionais.
+- O botão das trilhas completas encaminha diretamente ao simulador ampliado do Instituto EnsinoMeu.
+- O aluno acompanha acertos e correção comentada, sem obrigação de cadastro.
+- O acesso às questões e ao material de revisão não depende da Kiwify.
 
-PUBLICAÇÃO
-Substitua TODO o conteúdo do repositório público por este pacote. Não faça merge parcial com a versão anterior, para evitar arquivos antigos e rotas quebradas.
+LINK DO ACERVO UNIFICADO
+https://cincoregioes-star.github.io/instituto-ensinomeu/conteudos-recuperados/logistica/
 
-ANTES DE ANUNCIAR
-Preencha os 12 checkouts reais no objeto checkouts de config.js e valide os eventos da Meta.
+A página premium-info.html preserva redirecionamento para trilhas gratuitas para compatibilidade com links antigos.
