@@ -21,7 +21,7 @@ tracks.forEach(t=>{
   const a=document.createElement('article');
   a.className='card';
   a.style.setProperty('--accent',m.accent);
-  const completo=['est','rec','pck','ops','sel','adm','mov','trp','seg','inv'].includes(t.id);
+  const completo=tracks.some(x=>x.id===t.id);
   a.innerHTML=`<div class="card-top"><span class="code-pill">${escapeHtml(t.code)}</span><span class="card-cat">${escapeHtml(m.cat)}</span></div><span class="card-level">${escapeHtml(m.level)}</span><h3><strong>${escapeHtml(t.title)}</strong></h3><p>${escapeHtml(t.short)}</p><div class="free-box"><span class="free-tag">GRÁTIS</span><div class="free-meta">${completo?"5 módulos • 100 questões":"2 módulos • 10 questões"}</div><small>${completo?"Banco completo no Instituto EnsinoMeu":"Questões atuais em dois módulos"}</small></div><div class="card-actions"><a class="btn btn-yellow" href="${t.freeFile}">Iniciar teste gratuito <span aria-hidden="true">→</span></a></div>`;
   grid.appendChild(a)
 });
